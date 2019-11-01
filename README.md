@@ -34,7 +34,7 @@ $ sudo airmon-ng
 $ sudo airmon-ng start wlan0
 ```
 >This code will start monitoring mode for `wlan0`. If you were connecting the raspberry pi from this adaptor, your connection will stop.
->After this code, you will also see that the name of `wlan0` turns to `wlan0mon`. This the name you will use after this point.
+>After this code, you will also see that the name of `wlan0` turns to `wlan0mon`. This is the name you will use after this point.
 ```
 $ sudo airodump-ng wlan0mon
 ```
