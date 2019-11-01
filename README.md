@@ -15,7 +15,7 @@ $ sudo apt-get upgrade
 ```
 ## Downloading Airmon-ng
 ```
-$ sudo apt-get install airmon-ng
+$ sudo apt-get install -y aircrack-ng
 ```
 ## Checking Available Wi-fi Adaptors
 >Since you have 2 wi-fi adaptors, make sure you use one for monitoring while using other to control your raspberry pi.
