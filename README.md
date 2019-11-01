@@ -2,7 +2,7 @@
 >This is just a reminder for me to keep in mind how to get the wi-fi handshake while monitoring particular wi-fi signal.
 >I used Wi-fi Adaptor plugged into Raspberry Pi running NOOBS.
 ## Connecting Raspberry Pi
->Open terminal
+>Open terminal, make sure `SSH` is enabled in your raspberry pi.
 ```
 $ ssh <userName>@<IP>
 ```
