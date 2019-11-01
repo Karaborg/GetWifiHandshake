@@ -74,12 +74,12 @@ $ sudo aircrack-ng handshake.cap
 ```
 $ sudo crunch <NUMBER> <NUMBER> <CHARACTERS> -a <FILENAME> <SPECIALS>
 ```
->Example: ``sudo cruch 4 6 123ab -a word-list -t a@@@@b`.
->What this line do is, listing all the possible combination password that has min 4, max 6 characters; the characters/numbers of 1 2 3 a and b will be used and that starts with a and ends with b.
+>Example: `sudo cruch 4 6 123ab -a word-list -t a@@@@b`.
+>What this line do is, listing all the possible combination password that has min `4`, max `6` characters; the characters/numbers of `1, 2, 3, a and b` will be used and that starts with `a` and ends with `b`.
 >Since passwords are long and complicated than just normal texts, I would guess this will also take some time.
 
 ### Making Your Own rockyou List
->`rockyou.txt` is a list of common password on internet. And this is where things gets interesting. Know your target, observe the user, try to guess possible key words and write them all.
+>`rockyou.txt` is a list of common password on internet. And this is where things gets interesting. Know your target, observe the users, try to guess possible key words and write them all.
 >After you are done with rockyou list,
 ```
 $ sudo aircrack-ng handshake.cap -w rockyou
