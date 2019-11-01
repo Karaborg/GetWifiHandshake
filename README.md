@@ -91,4 +91,4 @@ $ sudo aircrack-ng handshake.cap -w rockyou
 $ sudo airmon-ng stop wlan0mon
 ```
 ## Video Tutorial
-- <a href="https://youtu.be/Qmi0Rh_I0G0" target="_blank">`Tutorial`</a>
+- <a href="https://youtu.be/Qmi0Rh_I0G0" target="_blank">`YouTube`</a>
